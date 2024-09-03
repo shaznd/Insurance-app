@@ -64,13 +64,14 @@ public class InsuranceBilling {
     // get the  base price based on  animal type
     private static double getBasePrice(Animal animal) {
         if (animal instanceof Dog) {
-
+           return 2500;
         } else if (animal instanceof Cat) {
             return 2000;
         } else if (animal instanceof SmallPet) {
             return 1000;
         } else {
             throw new IllegalArgumentException("Unknown animal type");
+
         }
     }
 
